@@ -15,6 +15,8 @@ WooCommerce Easy Category Select is a simple plugin that enhances the WooCommerc
 
 This plugin is particularly useful for stores with a large number of product categories, making it easier to find and select the right category without scrolling through a long list.
 
+Source code and more information can be found on the [GitHub repository](https://github.com/maikunari/woocommerce-easy-category-select).
+
 == Installation ==
 
 1. Upload the `woocommerce-easy-category-select` folder to the `/wp-content/plugins/` directory.

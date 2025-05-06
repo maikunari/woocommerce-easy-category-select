@@ -1,9 +1,12 @@
 <?php
 /*
  Plugin Name: WooCommerce Easy Category Select
- Description: Adds a search box to the WooCommerce Product Categories meta box.
+ Description: Adds a search box to the WooCommerce Product Categories meta box for easier category selection.
  Version: 1.0
  Author: Maikunari
+ Author URI: https://github.com/maikunari
+ Plugin URI: https://github.com/maikunari/woocommerce-easy-category-select
+ Requires Plugins: woocommerce
 */
 
 add_action('admin_footer', 'add_category_search_box');
