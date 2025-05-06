@@ -31,9 +31,6 @@ This plugin has been tested with WooCommerce versions 5.0 and above. It should w
 
 Yes, you can customize the styling by adding your own CSS to your theme or child theme to override the default inline styles.
 
-== Screenshots ==
-
-1. The search box added to the Product Categories meta box.
 
 == Changelog ==
 
