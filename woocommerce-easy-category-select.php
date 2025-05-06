@@ -45,17 +45,15 @@ function add_category_search_box() {
             var $target = $('#product_cat-all');
             if ($target.length) {
                 $target.prepend(searchBox); // Place it at the top of the 'All categories' tab content
-                console.log('Search box added at the top of #product_cat-all with sticky positioning and bottom border');
+                $target.css('min-height', 'calc(350px)'); // Set min-height to 350px
             } else {
                 $('#taxonomy-product_cat .tabs-panel').prepend(searchBox); // Fallback to the top of any tab content panel
-                console.log('Fallback: Search box added to .tabs-panel');
             }
             
             // Prevent page reload on Enter key in search field
             $('#product_cat_search').on('keypress', function(e) {
                 if (e.which === 13) { // Enter key
                     e.preventDefault(); // Prevent form submission/page reload
-                    console.log('Enter key prevented from reloading page');
                 }
             });
 
