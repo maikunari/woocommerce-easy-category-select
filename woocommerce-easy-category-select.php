@@ -35,14 +35,14 @@ function add_category_search_box() {
     <script>
         jQuery(document).ready(function($) {
             // Add search box at the top of the 'All categories' tab content panel so it shows only when this tab is active
-            var searchBox = '<div style="margin-bottom: 10px; margin-top: 10px; position: sticky; top: 0; background: #fff; z-index: 10; padding: 5px 0;">' +
+            var searchBox = '<div style="margin-bottom: 10px; margin-top: 10px; position: sticky; top: 0; background: #fff; z-index: 10; padding: 5px 0; border-bottom: 1px solid #ddd;">' +
                 '<input type="text" id="product_cat_search" placeholder="Search categories..." style="width: 100%; padding: 5px;" />' +
                 '<div id="category_path" style="margin-top: 5px; font-style: italic; color: #555;"></div>' +
             '</div>';
             var $target = $('#product_cat-all');
             if ($target.length) {
                 $target.prepend(searchBox); // Place it at the top of the 'All categories' tab content
-                console.log('Search box added at the top of #product_cat-all with sticky positioning');
+                console.log('Search box added at the top of #product_cat-all with sticky positioning and bottom border');
             } else {
                 $('#taxonomy-product_cat .tabs-panel').prepend(searchBox); // Fallback to the top of any tab content panel
                 console.log('Fallback: Search box added to .tabs-panel');
